@@ -32,3 +32,36 @@ inline struct Vector3 _WorldToScreen(const struct Vector3 pos, struct Matrix mat
 
 	return out;
 }
+
+struct pEntity
+{
+	DWORD64 EntityPtr;
+	Vec3 Pos;
+	int TeamNum;
+	int CurrentShield;
+	int CurrentHealth;
+	int BleedOutState;
+	int LifeState;
+	const char* PlayerName;
+	int DuckState;
+	float TimeBase;
+};
+
+struct pLocal
+{
+	DWORD64 EntityPtr;
+	Vec3 Pos;
+	int CurrentHealth;
+	int TeamNum;
+	Vec3 ViewAngle;
+	float TimeBase;
+};
+
+struct WeaponClass
+{
+	DWORD64 WeaponHandle;
+	DWORD64 HandleMask;
+	DWORD64 EntityPtr;
+	int BulletSpeed;
+	int GravityScale;
+};

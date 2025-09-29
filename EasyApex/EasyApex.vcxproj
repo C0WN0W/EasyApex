@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cheats.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="Memory\Interface.hpp" />
     <ClInclude Include="Memory\QF_driver.h" />
@@ -40,6 +41,7 @@
     <ClInclude Include="Structs.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cheats.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OS-ImGui\imgui\imgui.cpp" />
     <ClCompile Include="OS-ImGui\imgui\imgui_demo.cpp" />
